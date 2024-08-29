@@ -2,12 +2,12 @@ cff-version: "1.2.0"
 type: "software"
 date-released: "2024-08-29"
 title: "LHDN e-Invoice Findings for Sole Proprietorship"
-version: "0.0.2"
+version: "1.0.0"
 license: "CC-BY-ND-4.0"
 repository: "https://github.com/ChewKeanHo/RESEARCH_LHDN-E-Invoice-for-Sole-Proprietorship"
 repository-code: "https://github.com/ChewKeanHo/RESEARCH_LHDN-E-Invoice-for-Sole-Proprietorship"
 repository-artifact: "https://github.com/ChewKeanHo/RESEARCH_LHDN-E-Invoice-for-Sole-Proprietorship"
-url: "https://github.com/ChewKeanHo/RESEARCH_LHDN-E-Invoice-for-Sole-Proprietorship"
+url: "https://doi.org/10.5281/zenodo.13435551"
 contact:
   - affiliation: "(Holloway) Chew, Kean Ho"
     email: "hello@hollowaykeanho.com"
@@ -15,7 +15,7 @@ contact:
 abstract: |-
   In Year 2024, Malaysia Inland Revenue Board (LHDN) had begun rolling out its
   e-Invoice system starting from August 1, 2024 for taxpayers with annual
-  turnover or revenue more than 100 millions. LHDN is estimating that in year
+  turnover or revenue more than 100 millions. LHDN is estimating that by year
   2025, all taxpayers shall implement e-Invoice regardless of sizes and income
   amount. While small businesses registered sole proprietorship are not required
   to participate before 1 July 2025, some of us, especially independent content
@@ -29,19 +29,23 @@ abstract: |-
   on how to perform one aside from the general guidance compared to public and
   private corporations. After the author, a sole proprietor who personally
   explored and successfully experienced a filing as a seller, it’s safe to share
-  the knowledge to the similar fate.
+  the knowledge to the similar fate. This paper shares the experience utilizing
+  LHDN e-Invoice as a sole proprietor mainly for enabling and validating
+  counterparts’ invoices (supplier and customers). As the paper was written in
+  August 2024 where LHDN is still beta-testing the system with both private and
+  public corporations, the content of the paper can be outdated as time flows
+  per LHDN pursue of continuous improvements.
 
-  This paper shares the experience utilizing LHDN e-Invoice as a sole proprietor
-  mainly for enabling and validating counterparts’ invoices (supplier and
-  customers). As the paper was written in August 2024 where LHDN is still
-  beta-testing the system with both private and public corporations, the content
-  of the paper can be outdated as time flows per LHDN pursue of continuous
-  improvements. To avoid conflict of interest and misinformation, reader MUST AND
-  SHALL always refer to LHDN provided guidelines to perform e-invoices. The
-  author SHALL NOT be held liable for any consequences in any means and any
-  circumstances or forms for the reader.
+  To avoid conflict of interest and misinformation, reader MUST AND SHALL always
+  refer to LHDN provided guidelines to perform e-invoicing[16]. The author SHALL
+  NOT be held liable for any consequences in any means, any circumstances, any
+  shape, or any forms for the reader.
 message: |-
   Please cite and reference this repository accordingly.
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.13435551"
+    description: "General & Latest"
 authors:
   - given-names: "Kean Ho"
     family-names: "Chew"

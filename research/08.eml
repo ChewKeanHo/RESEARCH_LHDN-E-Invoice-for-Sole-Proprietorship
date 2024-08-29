@@ -1,0 +1,162 @@
+Delivered-To: hollowaykeanho@gmail.com
+Received: by 2002:a05:7208:d0d4:b0:8c:c9bc:96a7 with SMTP id w20csp832541rba;
+        Wed, 28 Aug 2024 02:26:36 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCUoV67aS++CbzvZJdelWvXR3YKWUbvgTq5B+tNvfjS3Icm7HtiSl2r0WY0szH1fj74zUiofRfebCdp7lq4Tjw==@gmail.com
+X-Google-Smtp-Source: AGHT+IE/TsFXEZZ0CVv3tYh4dgpzoA9r+FoHcmBnITF8qREgQNNVU7I6EvckZfjWhEBEl/zpyirS
+X-Received: by 2002:a05:6358:71b:b0:1ac:f058:f714 with SMTP id e5c5f4694b2df-1b5c21edd92mr2090250855d.21.1724837196019;
+        Wed, 28 Aug 2024 02:26:36 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1724837195; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=OFpT5G+U2Ay63VSffI4+SxbECEgn49h2YYPi31LhV0EqUFduNNsymMxp3chJvwuUba
+         +n3+uXoXnhixQsPXgv8cm9Sj6uXQq0kqvCfj/kTyXgia0pHHJ7Q5dCdLFEsOgimVRGr4
+         cefR3A1DcULITISecBwClTuq2ebqbP6x97KyVHAWnHYd35ST+aLwkgQdFv7HIDfNzQ4h
+         jfYSD08PK/KBIwEKvg3/X0mcv9JIgryTf10o0C2n9xM9TG8nNMT+mMAicrSTwrHtH4xy
+         HH/AeoFFxiH5zgXHQeSrMvkbBkxx6/gzxmxDfg8tIcqFjXtJmlk71ROR0nGzahWBfYFm
+         HBiw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:from:message-id:date:mime-version:dkim-signature
+         :dkim-signature;
+        bh=YbVNkZNRACWTWM2Xa8q1i1U9bQXBK4Q2sQ20r6ghBR4=;
+        fh=TsXUjPeYNeVguNibplqMKJ7szJT/e7w/7X8kFJOPQ38=;
+        b=qsm7plDUlNWGv0RQHd7ltHA4T49Sx8WUZtIIxuqZ6zDNiD4qbdCpmnbpLjQyynvbHf
+         N/qGSWk/IxuopRbgGUdw5RPeTI38RujpI/QW9C7srKW3nr/6+jb2KMaG+etWCEAVdkFt
+         7mTI4N5VQPeo05+7MwLJY+7DmWa2zLh9yaqzzBXohRc5JrOuprFSGe71H/NnCG7R4nkB
+         O/nGHLriozNeuAtqyNynV74Odx1nF9L3jM2md7M9LMrXJx6QG2GxPoRWCaWhhergzxXo
+         NdUBmByFRkORIhYDDsiuJ6oW7RvTcvDsMEHXwCcwxfiF0498rDhh99tZQ5N591w5+OV4
+         xoDQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@cloudflare-email.net header.s=2023 header.b=K7PdjuAj;
+       dkim=pass header.i=@hasil.gov.my header.s=s1 header.b=RKHJnnzk;
+       arc=pass (i=1 spf=pass spfdomain=em1389.hasil.gov.my dkim=pass dkdomain=hasil.gov.my dmarc=pass fromdomain=hasil.gov.my);
+       spf=pass (google.com: domain of cfbounces+ndrdrop@hollowaykeanho.com designates 104.30.8.145 as permitted sender) smtp.mailfrom=cfbounces+ndrdrop@hollowaykeanho.com;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=hasil.gov.my
+Return-Path: <cfbounces+ndrdrop@hollowaykeanho.com>
+Received: from i-bef.cloudflare-email.net (i-bef.cloudflare-email.net. [104.30.8.145])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-714342ec78asi14645220b3a.175.2024.08.28.02.26.35
+        for <hollowaykeanho@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 28 Aug 2024 02:26:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of cfbounces+ndrdrop@hollowaykeanho.com designates 104.30.8.145 as permitted sender) client-ip=104.30.8.145;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cloudflare-email.net header.s=2023 header.b=K7PdjuAj;
+       dkim=pass header.i=@hasil.gov.my header.s=s1 header.b=RKHJnnzk;
+       arc=pass (i=1 spf=pass spfdomain=em1389.hasil.gov.my dkim=pass dkdomain=hasil.gov.my dmarc=pass fromdomain=hasil.gov.my);
+       spf=pass (google.com: domain of cfbounces+ndrdrop@hollowaykeanho.com designates 104.30.8.145 as permitted sender) smtp.mailfrom=cfbounces+ndrdrop@hollowaykeanho.com;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=hasil.gov.my
+DKIM-Signature: v=1; a=rsa-sha256; s=2023; d=cloudflare-email.net; c=relaxed/relaxed;
+	h=To:Subject:From:Date:reply-to:cc:resent-date:resent-from:resent-to
+	:resent-cc:in-reply-to:references:list-id:list-help:list-unsubscribe
+	:list-subscribe:list-post:list-owner:list-archive; t=1724837195;
+	x=1725441995; bh=YbVNkZNRACWTWM2Xa8q1i1U9bQXBK4Q2sQ20r6ghBR4=; b=K7PdjuAj47
+	rEQT/UHdFO8O0GnRnZ1Bj1tjBJlv7TXJGpT9xYaoUiG7p3zoNZujLqunx/6q0FGPJt7+Imwcf9g
+	pdhziRP1AJMWKvUiW42slmdbdsn3y5svu42Zrq/0XZF5sv09cfEqnD9zHmYbTt0S794NPrZ+6SU
+	BrEqvntstPQ5eqp9iKEwO63Zy6Fw5A+YN73PgNGLq8FMbcdZRlDa7pIC6jxgjDUFqhMtPHGEYvt
+	xnrFU25BR98uMCyCEYsxolqSoGf+eloKTDOuKG0JZ2CJgihsLPObkdt47A09zmSaYcoBIdqWQqT
+	bZrvoy7OgPpH6FpZMubz0D3TAS3IuaZA==;
+X-Forwarded-To: hollowaykeanho@gmail.com
+X-Forwarded-For: hello@hollowaykeanho.com hollowaykeanho@gmail.com
+Received: from xvfrswqf.outbound-mail.sendgrid.net (168.245.105.79)
+        by cloudflare-email.net (unknown) id 5AVSPZn5oVFt
+        for <hello@hollowaykeanho.com>; Wed, 28 Aug 2024 09:26:32 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=2023; d=cloudflare-email.net; cv=none;
+	b=NVFyik30fqh9/3pBg1erfQEvJ1vqCys5RpskEHdT1UlhrTcWLx5i4X9nsyMeiUB1hilSKxfY/
+	eqa4MgFOCRg0p+52z2y8NNf1lhBRPSAPvYsPwk7HhOXfQJzK1pCNP+F3+k+N2TztFpImcD9m+yy
+	IIVaYlegbboUQ+rDeqSwndNlOIVbYy+NjRq5cO6KdnkjtFFtaW42o/RvuAffSLB5Y7vGnqhdkjn
+	u7Ktmot7yj6C8LtnyUEUd/OtYIuEg73bVHEIAdkZDpONT0an+BsVcD/mMYO/ZHgHMmI2sOlXOwe
+	T5S3hm14td8lek6aaYlxa9p4UQWvI+zxdcGtk8OEh/nw==;
+ARC-Message-Signature: i=1; a=rsa-sha256; s=2023; d=cloudflare-email.net; c=relaxed/relaxed;
+	h=To:Subject:From:Date:reply-to:cc:resent-date:resent-from:resent-to
+	:resent-cc:in-reply-to:references:list-id:list-help:list-unsubscribe
+	:list-subscribe:list-post:list-owner:list-archive; t=1724837194;
+	x=1725441994; bh=YbVNkZNRACWTWM2Xa8q1i1U9bQXBK4Q2sQ20r6ghBR4=; b=agko/7K30d
+	T9kjPc+1SFVwn/oJQB/nXMRZS1/nYj5V0tkv6TpMHgd8kRElZRmA0Pro/e63ochKabhkuXqlaq+
+	DYOfpbhxsDdY1eKNJ/BD6yL6uySBEKhRFw++Iveu9jn/fvRBEtgeuSRh53HkkeIj1C9X2ki6v6n
+	6iooOPF0qBdx6wWXPKu0qxlp/YNnPB7I3nd8Nhpiq7Tzfgmj6n7QfhFql4Y1RS1Gnk3ZJ/7K560
+	M/HV/cvLOq30ivntaqHWL2oOar4/Ebto+3mzvWuIwGkh+WHS3U08AoIwOiLCSRCnXYbPF1sSL+N
+	bAU1maugCFMClsNwd6PFZawTyncjjzJQ==;
+ARC-Authentication-Results: i=1; mx.cloudflare.net;
+	dkim=pass header.d=hasil.gov.my header.s=s1 header.b=RKHJnnzk;
+	dmarc=pass header.from=hasil.gov.my policy.dmarc=none;
+	spf=none (mx.cloudflare.net: no SPF records found for postmaster@xvfrswqf.outbound-mail.sendgrid.net) smtp.helo=xvfrswqf.outbound-mail.sendgrid.net;
+	spf=pass (mx.cloudflare.net: domain of bounces+44016960-be28-hello=hollowaykeanho.com@em1389.hasil.gov.my designates 168.245.105.79 as permitted sender) smtp.mailfrom=bounces+44016960-be28-hello=hollowaykeanho.com@em1389.hasil.gov.my;
+	arc=none smtp.remote-ip=168.245.105.79
+Received-SPF: pass (mx.cloudflare.net: domain of bounces+44016960-be28-hello=hollowaykeanho.com@em1389.hasil.gov.my designates 168.245.105.79 as permitted sender)
+	receiver=mx.cloudflare.net; client-ip=168.245.105.79; envelope-from="bounces+44016960-be28-hello=hollowaykeanho.com@em1389.hasil.gov.my"; helo=xvfrswqf.outbound-mail.sendgrid.net;
+Authentication-Results: mx.cloudflare.net;
+	dkim=pass header.d=hasil.gov.my header.s=s1 header.b=RKHJnnzk;
+	dmarc=pass header.from=hasil.gov.my policy.dmarc=none;
+	spf=none (mx.cloudflare.net: no SPF records found for postmaster@xvfrswqf.outbound-mail.sendgrid.net) smtp.helo=xvfrswqf.outbound-mail.sendgrid.net;
+	spf=pass (mx.cloudflare.net: domain of bounces+44016960-be28-hello=hollowaykeanho.com@em1389.hasil.gov.my designates 168.245.105.79 as permitted sender) smtp.mailfrom=bounces+44016960-be28-hello=hollowaykeanho.com@em1389.hasil.gov.my;
+	arc=none smtp.remote-ip=168.245.105.79
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hasil.gov.my;
+	h=mime-version:content-type:from:subject:to:cc:content-type:from:
+	subject:to;
+	s=s1; bh=YbVNkZNRACWTWM2Xa8q1i1U9bQXBK4Q2sQ20r6ghBR4=;
+	b=RKHJnnzkc+6bn7zPx6H6hcGSZb56e16rpNdJcjYE1PYlYBIkDvxEB8Bt9NuZwXt3p50D
+	ezxDw2otW6vADJyH+hV8RrLYoA3Hk8lfWAnTX1w9EoOfhXPXPRgvGNoE++7sGZOq4SyuTK
+	YG5MvdcqWx7TM1Uo6/i4z6Ygze66VxC+5fR7bbRilRD/8Fwl2gpAFM7KYuqV3kVC08yOnq
+	YDKBovK5DMBmwt1pyz4e2lPgkZUaZxbm7+yoUoUT5CFBWJXk55Wf/AL5xhJiXgQH44hthP
+	2PO2JBwUO2boGY0zf59IjBL6fODnA6IlAQ3B4u4NWvWWwNuDYR/pkqsmOGrXSsSQ==
+Received: by recvd-7666fbc46c-jgncv with SMTP id recvd-7666fbc46c-jgncv-1-66CEED48-16
+	2024-08-28 09:26:32.615224211 +0000 UTC m=+558394.034129721
+Received: from MYIVHELPDESKAPP (unknown)
+	by geopod-ismtpd-3 (SG) with ESMTP
+	id eWqMWf5USW6jxRpSpwD9dA
+	for <hello@hollowaykeanho.com>;
+	Wed, 28 Aug 2024 09:26:32.506 +0000 (UTC)
+MIME-Version: 1.0
+Date: Wed, 28 Aug 2024 09:26:32 +0000 (UTC)
+Message-ID: <1D4FBC985D0068CD95880E01FDFDA3C4BB595367@MYIVHELPDESKAPP>
+Content-Type: multipart/alternative; boundary="------------040802090200050407050502"
+X-Priority: 3 (Normal)
+From: "noreply-myinvois@hasil.gov.my" <noreply-myinvois@hasil.gov.my>
+Subject: Acknowledgement Email Service Request Created - Reference No -
+ 00036172 and Status Resolved
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EuYXYedraW=2FJDt7DPbp5GmHnpdvKD6U+HBEeAPlos4myHdTxSicdidiAmO?=
+ =?us-ascii?Q?41MED2+uDFdJA9g2U4R4v+OAKDH1zhC=2FVs6udgs?=
+ =?us-ascii?Q?727eLJehfTtzAZe=2F0jnhhRQ2rDuibLghsm79qlG?=
+ =?us-ascii?Q?dXpt9kaAWIeL4zHqzq=2FgqLZgtf3ezioVSQLZRq6?=
+ =?us-ascii?Q?=2F4QitClPRM9hMOwQYfHIYsLTbI2xOmP6np38XV+?=
+ =?us-ascii?Q?jjlRuYMnw5D6cViB53QiAkvWA3DrzLbIcLgGHZQ?=
+ =?us-ascii?Q?54+QR8kEb0yOWKwbCJEngxNfb6WEx6Gh7S=2FtwkX?=
+ =?us-ascii?Q?2KhDPUis=3D?=
+To: hello@hollowaykeanho.com
+X-Entity-ID: u001.6/yj8mlOmqLpT+HmWN7rPA==
+
+--------------040802090200050407050502
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=iso-8859-1
+
+<html><head><META http-equiv=3D"Content-Type" content=3D"text/html;charset=
+=3Dutf-8"></head><body><div class=3D"ewa-rteLine">
+<div class=3D"ewa-rteLine">Dear Chew Kean Ho ,</div>
+<div class=3D"ewa-rteLine">=A0</div>
+<div class=3D"ewa-rteLine">We are pleased to inform you that your issue has=
+ been resolved.=A0</div>
+<div class=3D"ewa-rteLine">REFERENCE NO: 00036172</div>
+<div class=3D"ewa-rteLine">Category: MyInvois Portal</div>
+<div class=3D"ewa-rteLine">Subject: General Queries</div>
+<div class=3D"ewa-rteLine">Type: Others</div>
+<div class=3D"ewa-rteLine">SR Description: Portal User>General E-Invoice>Te=
+chnical
+inquiry regarding TIN number
+</div>
+<div class=3D"ewa-rteLine">SR Status: Resolved</div>
+<div class=3D"ewa-rteLine">=A0</div>
+<div class=3D"ewa-rteLine">Thank you.</div>
+<div class=3D"ewa-rteLine">=A0</div>
+<div class=3D"ewa-rteLine">=A0</div>
+</div><img src=3D"http://url2425.hasil.gov.my/wf/open?upn=3Du001.fRRHmN3U03=
+178U-2F3yh1qWd-2FwhYwMl4f4jjr1VglcVZiT3m9M7nbotszXEjYsFrQW7v39rNdE7BdKeuPMq=
+T7QZQFcveLSG1maZ19i2Dv8xbmoz24zxTDBd1uh90cvlyvjc9XN9uuCnmwrQMbIubjiX1ZAR67S=
+LIHBUbEv2VLBM93qSkhnP4LGZwSKOPhqYrPZLxkttU-2FqhU-2FwTfHktM1y-2BZaHDUOb569tP=
+RZPZ9el-2B8k-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"he=
+ight:1px !important;width:1px !important;border-width:0 !important;margin-t=
+op:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin=
+-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;pad=
+ding-right:0 !important;padding-left:0 !important;"/></body></html>
+--------------040802090200050407050502--
+
+
